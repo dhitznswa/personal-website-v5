@@ -6,7 +6,7 @@ export default function ProfileCard() {
     <Card>
       <CardContent>
         <div className="flex flex-col md:flex-row items-center gap-5">
-          <div className="w-full md:w-2/6 bg-linear-to-r from-hli via-slate-400 to-hli rounded-tl-xl rounded-br-xl overflow-hidden">
+          <div className="w-full md:w-2/6 bg-linear-to-r from-hli via-sky-300 to-hli rounded-tl-xl rounded-br-xl overflow-hidden">
             <Image
               src="/pas-foto.png"
               alt="Foto"
