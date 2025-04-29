@@ -13,6 +13,7 @@ import {
 } from "./ui/dialog";
 import { Button } from "./ui/button";
 import { ShineBorder } from "./magicui/shine-border";
+import Link from "next/link";
 
 interface ProjectType {
   name: string;
@@ -30,15 +31,23 @@ const Projects: ProjectType[] = [
     image: "/images/projects/infolokerhub.png",
     url: "https://www.infolokerhub.com",
     repo: "-",
-    tech: ["NextJS", "TailwindCSS", "Typescript"],
+    tech: ["Blogger", "TailwindCSS"],
   },
   {
-    name: "Infolokerhub.com",
+    name: "Personal Website v4",
     description: "Job vacancy information media platform in Indonesia.",
-    image: "/images/projects/infolokerhub.png",
-    url: "https://www.infolokerhub.com",
+    image: "/images/projects/personal_website_v4.png",
+    url: "#",
+    repo: "#",
+    tech: ["NextJS", "Shadcn Ui", "Typescript"],
+  },
+  {
+    name: "Mini E-Commerce",
+    description: "Job vacancy information media platform in Indonesia.",
+    image: "/images/projects/mini_eccomerce.jpeg",
+    url: "#",
     repo: "-",
-    tech: ["NextJS", "TailwindCSS", "Typescript"],
+    tech: ["NextJS", "PrimeReact", "Typescript"],
   },
 ];
 
@@ -64,7 +73,7 @@ function DetailProject({
               alt={project.name}
               width={1000}
               height={1000}
-              className="rounded-lg aspect-[16/9] object-cover"
+              className="rounded-lg aspect-[16/9] object-cover border border-border"
             />
             <div className="flex flex-col gap-2 mt-4">
               <h4 className="font-semibold">Description</h4>
@@ -109,8 +118,9 @@ export default function ProjectSection() {
       <h3 className="font-bold text-lg text-hli leading-5 mt-2">
         Here are some projects i have worked on.
       </h3>
+      <p className="text-xs italic mt-1">* Click image for project detail</p>
 
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-5">
         {Projects.map((project, i) => (
           <div
             className="col-span-1 group p-2 rounded-lg bg-background shadow-md relative overflow-hidden cursor-zoom-in"
@@ -119,11 +129,11 @@ export default function ProjectSection() {
             <ShineBorder shineColor={["#008080", "#FE8FB5", "#FFBE7B"]} />
             <DetailProject project={project}>
               <div className="w-full h-full relative">
-                <div className="absolute top-0 left-0 right-0 bottom-0 bg-foreground/70 text-background transition-opacity duration-300 group-hover:opacity-100 opacity-0 rounded-lg flex items-center justify-center gap-2">
+                <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/70 text-slate-300 transition-opacity duration-300 group-hover:opacity-100 opacity-0 rounded-lg flex flex-col items-center justify-center gap-1">
                   <span>
-                    <Eye />
+                    <Eye className="h-6 w-6" />
                   </span>
-                  <span>Detail Project</span>
+                  <span className="text-xs">PROJECT DETAIL</span>
                 </div>
                 <Image
                   src={project.image}
@@ -136,6 +146,9 @@ export default function ProjectSection() {
             </DetailProject>
           </div>
         ))}
+      </div>
+      <div className="w-full  flex justify-center items-center mt-6">
+        <Link href="https://github.com/dhitznswa">See more</Link>
       </div>
     </>
   );
