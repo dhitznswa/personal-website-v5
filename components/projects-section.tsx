@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { Eye } from "lucide-react";
+import { ArrowRightCircle, Eye } from "lucide-react";
 
 import {
   Dialog,
@@ -14,6 +14,7 @@ import {
 import { Button } from "./ui/button";
 import { ShineBorder } from "./magicui/shine-border";
 import Link from "next/link";
+import HeadSection from "./head-section";
 
 interface ProjectType {
   name: string;
@@ -114,11 +115,11 @@ function DetailProject({
 export default function ProjectSection() {
   return (
     <>
-      <h5 className="font-semibold">My Projects</h5>
-      <h3 className="font-bold text-lg text-hli leading-5 mt-2">
-        Here are some projects i have worked on.
-      </h3>
-      <p className="text-xs italic mt-1">* Click image for project detail</p>
+      <HeadSection
+        title="My Projects"
+        highlight="Here are some projects i have worked on."
+        note="* Click an image for project detail"
+      />
 
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-5">
         {Projects.map((project, i) => (
@@ -148,7 +149,15 @@ export default function ProjectSection() {
         ))}
       </div>
       <div className="w-full  flex justify-center items-center mt-6">
-        <Link href="https://github.com/dhitznswa">See more</Link>
+        <Link
+          href="https://github.com/dhitznswa"
+          className="flex items-center text-semibold space-x-2"
+        >
+          <span>See more on Github</span>
+          <span>
+            <ArrowRightCircle />
+          </span>
+        </Link>
       </div>
     </>
   );

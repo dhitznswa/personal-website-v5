@@ -1,5 +1,6 @@
 import React from "react";
 import { IconCloud } from "./magicui/icon-cloud";
+import HeadSection from "./head-section";
 
 const slugs = [
   "typescript",
@@ -39,10 +40,10 @@ export default function AboutMe() {
   return (
     <div className="flex flex-col lg:flex-row items-center justify-between gap-5">
       <div className="w-full lg:w-2/3">
-        <h4 className="font-semibold">About Me</h4>
-        <h2 className="text-xl font-bold text-hli">
-          Come on, get to know me now.
-        </h2>
+        <HeadSection
+          title="About me"
+          highlight="Come on, get to know me now."
+        />
         <p className="my-8 lg:w-[80%]">
           Hello, I am Adhitya Nasuwa, a graduate of Vocational High School
           majoring in Computer Network Engineering, I am a proactive individual,

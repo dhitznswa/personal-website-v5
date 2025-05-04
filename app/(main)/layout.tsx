@@ -7,7 +7,7 @@ export default function MainLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="w-full h-full relative">
+    <div className="w-full h-full relative pb-20 md:pb-0 bg-background">
       <NavbarMenu />
       <main className="p-4 md:p-10 xl:p-20 font-poppins text-sm tracking-wide container mx-auto">
         {children}
