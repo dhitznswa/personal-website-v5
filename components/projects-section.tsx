@@ -31,12 +31,12 @@ const Projects: ProjectType[] = [
     description: "Job vacancy information media platform in Indonesia.",
     image: "/images/projects/infolokerhub.png",
     url: "https://www.infolokerhub.com",
-    repo: "-",
+    repo: "#",
     tech: ["Blogger", "TailwindCSS"],
   },
   {
     name: "Personal Website v4",
-    description: "Job vacancy information media platform in Indonesia.",
+    description: "My Personal Website version 4. Created with Next.js.",
     image: "/images/projects/personal_website_v4.png",
     url: "#",
     repo: "#",
@@ -44,10 +44,10 @@ const Projects: ProjectType[] = [
   },
   {
     name: "Mini E-Commerce",
-    description: "Job vacancy information media platform in Indonesia.",
+    description: "Mini ECommerce crea.",
     image: "/images/projects/mini_eccomerce.jpeg",
     url: "#",
-    repo: "-",
+    repo: "#",
     tech: ["NextJS", "PrimeReact", "Typescript"],
   },
 ];

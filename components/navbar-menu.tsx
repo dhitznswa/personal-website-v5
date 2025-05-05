@@ -41,7 +41,7 @@ const menuItems: MenuItemType[] = [
   },
 ];
 
-function HoverTitle({
+export function HoverTitle({
   children,
   title,
 }: {
