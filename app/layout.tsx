@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import ReactLenis from "lenis/react";
 import { ThemeProvider } from "next-themes";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -57,6 +58,7 @@ export default function RootLayout({
         >
           <ReactLenis root>{children}</ReactLenis>
         </ThemeProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
