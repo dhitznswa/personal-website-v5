@@ -14,28 +14,28 @@ interface TestimonialsProps {
 const reviews: TestimonialsProps[] = [
   {
     name: "Andika Pratama",
-    username: "andika.store",
-    text: "Website toko online saya jadi jauh lebih cepat dan profesional setelah dibantu. Fitur-fitur yang saya minta semua berfungsi dengan baik. Kerjanya cepat dan komunikatif!",
+    username: "and***tore",
+    text: "Gila sih... website toko gue sekarang keliatan jauh lebih kece! Cepet juga ngerjainnya, semua request gue dibikinin. Mantap bener!",
   },
   {
     name: "Sarah Meilani",
-    username: "sarahlens",
-    text: "Dia bikin portfolio website saya kelihatan modern dan clean banget. Cocok buat presentasi ke klien. Recommended banget buat kamu yang butuh web developer andal!",
+    username: "sar***ens",
+    text: "Sumpah websitenya sekarang keliatan clean & modern banget. Pas banget buat nunjukin kerjaan ke klien. Gak nyesel deh minta tolong!",
   },
   {
     name: "Bayu Wicaksono",
-    username: "@bayu.tech",
-    text: "Landing page campaign saya dikerjakan super cepat dan hasilnya keren banget. Gak nyangka bisa sebagus ini dalam waktu singkat.",
+    username: "bay***ech",
+    text: "Landing page-nya gokil sih. Baru beberapa hari udah kelar dan hasilnya lebih keren dari ekspektasi gue!",
   },
   {
     name: "Nathania Grace",
-    username: "natdigital",
-    text: "Kerja sama bikin website company profile berjalan mulus. Selalu kasih update dan revisi pun dilayani dengan sabar. Profesional banget pokoknya.",
+    username: "nat***ital",
+    text: "Prosesnya smooth banget. Dia update terus progress-nya, revisi juga dilayanin sabar. Enak banget diajak kerja bareng!",
   },
   {
     name: "Fajar Nugroho",
-    username: "fajarmusik",
-    text: "Aku order website buat promosi jasa musikku. Tampilan dan UX-nya cakep banget! Bisa custom sesuai gaya yang aku mau. Mantap!",
+    username: "faj***sik",
+    text: "Gue bikin web buat jasa musik gue, dan hasilnya bener-bener sesuai vibe yang gue mau. UI/UX-nya cakep parah. Respect!",
   },
 ];
 

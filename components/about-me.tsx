@@ -1,4 +1,3 @@
-import React from "react";
 import { IconCloud } from "./magicui/icon-cloud";
 import HeadSection from "./head-section";
 

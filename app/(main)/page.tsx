@@ -25,13 +25,13 @@ export default function Welcome() {
       <div className="w-full mt-10 pt-10 md:pt-0" id="about">
         <AboutMe />
       </div>
-      <div className="w-full mt-10" id="projects">
+      <div className="w-full mt-10 pt-10" id="projects">
         <ProjectSection />
       </div>
       <div className="w-full mt-10">
         <Testimonials />
       </div>
-      <div className="w-full mt-20">
+      <div className="w-full mt-20 pt-10" id="contact">
         <ContactMe />
       </div>
     </>

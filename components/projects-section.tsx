@@ -118,7 +118,7 @@ export default function ProjectSection() {
       <HeadSection
         title="My Projects"
         highlight="Here are some projects i have worked on."
-        note="* Click an image for project detail"
+        note="* Click image for project detail"
       />
 
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-5">
@@ -134,7 +134,7 @@ export default function ProjectSection() {
                   <span>
                     <Eye className="h-6 w-6" />
                   </span>
-                  <span className="text-xs">PROJECT DETAIL</span>
+                  <span className="text-xs ">PROJECT DETAIL</span>
                 </div>
                 <Image
                   src={project.image}
@@ -152,6 +152,7 @@ export default function ProjectSection() {
         <Link
           href="https://github.com/dhitznswa"
           className="flex items-center text-semibold space-x-2"
+          target="_blank"
         >
           <span>See more on Github</span>
           <span>
