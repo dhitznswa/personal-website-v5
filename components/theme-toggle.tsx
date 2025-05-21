@@ -14,9 +14,9 @@ export default function ThemeToggle() {
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       >
         {theme === "dark" ? (
-          <SunMoonIcon className="transition-all duration-300" />
-        ) : (
           <MoonIcon className="transition-all duration-300" />
+        ) : (
+          <SunMoonIcon className="transition-all duration-300" />
         )}
       </div>
     </HoverTitle>
