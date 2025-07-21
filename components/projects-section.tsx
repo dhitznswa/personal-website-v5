@@ -35,12 +35,13 @@ const Projects: ProjectType[] = [
     tech: ["Blogger", "TailwindCSS"],
   },
   {
-    name: "Personal Website v4",
-    description: "My Personal Website version 4. Created with Next.js.",
-    image: "/images/projects/personal_website_v4.png",
-    url: "#",
-    repo: "#",
-    tech: ["NextJS", "Shadcn Ui", "Typescript"],
+    name: "Ngaji Online",
+    description:
+      "Baca, dengarkan, dan pelajari Al-Quran dengan terjemahan bahasa Indonesia, audio berkualitas tinggi, dan tafsir yang lengkap",
+    image: "/images/projects/ngaji_online.png",
+    url: "https://ngaji-online-dhitznswa.vercel.app",
+    repo: "https://github.com/dhitznswa/ngaji-online",
+    tech: ["ReactJS", "Shadcn Ui", "Typescript"],
   },
   {
     name: "Mini E-Commerce",
@@ -78,7 +79,7 @@ function DetailProject({
             />
             <div className="flex flex-col gap-2 mt-4">
               <h4 className="font-semibold">Description</h4>
-              <p>{project.description}</p>
+              <p className="text-muted-foreground">{project.description}</p>
             </div>
             <div className="flex flex-col gap-2 mt-3">
               <h4 className="font-semibold">Tech Stack</h4>
